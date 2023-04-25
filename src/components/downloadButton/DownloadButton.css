@@ -1,0 +1,22 @@
+.download-button {
+    padding-left: 12px;
+    padding-right: 12px;
+    color: white;
+    padding-bottom: 4px;
+    cursor: pointer;
+    background-color: lightblue;
+    border: 2px solid white;
+    border-radius: 30px;
+    transition: all 0.15s;
+    font-size: 18px;
+  
+    @media screen and (min-width: 680px) {
+        font-size: 24px;
+    }
+}
+  
+.download-button:hover {
+    color: lightblue;
+    background-color: white;
+    border: 2px solid lightblue;
+}
