@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/dog-breed-table/static/css/main.11055881.css",
+    "main.js": "/dog-breed-table/static/js/main.bf86f004.js",
+    "static/media/cute_dog.png": "/dog-breed-table/static/media/cute_dog.87b13606e9537118f267.png",
+    "index.html": "/dog-breed-table/index.html",
+    "main.11055881.css.map": "/dog-breed-table/static/css/main.11055881.css.map",
+    "main.bf86f004.js.map": "/dog-breed-table/static/js/main.bf86f004.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11055881.css",
+    "static/js/main.bf86f004.js"
+  ]
+}
