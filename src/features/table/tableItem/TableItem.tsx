@@ -7,7 +7,7 @@ interface TableItemProps {
     breed: string;
     onDragStart: (event: React.DragEvent<HTMLDivElement>) => void;
     onDragEnter: (event: React.DragEvent<HTMLDivElement>) => void;
-    onDragOver: (event: React.DragEvent<HTMLDivElement>, index: number) => void;
+    onDragOver: (event: React.DragEvent<HTMLDivElement>) => void;
     onDragLeave: (event: React.DragEvent<HTMLDivElement>) => void;
     onDragEnd: (event: React.DragEvent<HTMLDivElement>) => void;
     onDrop: (event: React.DragEvent<HTMLDivElement>) => void;
@@ -20,7 +20,7 @@ export const TableItem = ({rank, breed, onDragStart, onDragEnter, onDragOver, on
             draggable
             onDragStart={(event) => onDragStart(event)}
             onDragEnter={(event) => onDragEnter(event)}
-            onDragOver={(event) => onDragOver(event, rank)}
+            onDragOver={(event) => onDragOver(event)}
             onDragLeave={(event) => onDragLeave(event)}
             onDragEnd={(event) => onDragEnd(event)}
             onDrop={(event) => onDrop(event)}

@@ -158,11 +158,11 @@ export function Table() {
                         key={index}
                         rank={index} 
                         breed={item.breed}
-                        onDragStart={(e) => handleDragStart(1, index, e)}
-                        onDragEnter={(e) => handleDragEnter(1, index, e)}
-                        onDragOver={(e) => {e.preventDefault()}}
-                        onDragLeave={(e) => handleDragLeave(e)}
-                        onDragEnd={(e) => handleSort()}
+                        onDragStart={(event) => handleDragStart(1, index, event)}
+                        onDragEnter={(event) => handleDragEnter(1, index, event)}
+                        onDragOver={(event) => {event.preventDefault()}}
+                        onDragLeave={(event) => handleDragLeave(event)}
+                        onDragEnd={(event) => handleSort()}
                         onDrop={(event) => handleDragLeave(event)}
                     />
                 )) :
@@ -192,7 +192,7 @@ export function Table() {
                         breed={item.breed}
                         onDragStart={(event) => handleDragStart(2, index, event)}
                         onDragEnter={(event) => handleDragEnter(2, index, event)}
-                        onDragOver={(e) => {e.preventDefault()}}
+                        onDragOver={(event) => {event.preventDefault()}}
                         onDragLeave={(event) => handleDragLeave(event)}
                         onDragEnd={(event) => handleSort()}
                         onDrop={(event) => handleDragLeave(event)}
