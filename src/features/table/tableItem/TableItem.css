@@ -1,0 +1,25 @@
+.table-item-container {
+    width: 48%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-size: 18px;
+    margin-top: 4px;
+    border: 2px solid lightblue;
+
+    @media screen and (min-width: 680px) {
+        width: 300px;
+        font-size: 24px;
+    }
+}
+
+.rank-container {
+    background-color: lightblue;
+    color: white;
+    pointer-events: none;
+}
+
+.breed-container {
+    background-color: white;
+    color: lightblue;
+    pointer-events: none;
+}

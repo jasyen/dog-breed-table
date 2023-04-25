@@ -1,0 +1,86 @@
+.table-header {
+    width: 48%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-size: 24px;
+    margin-top: 4px;
+    border: 2px solid lightblue;
+    pointer-events: none;
+    display: none;
+
+    @media screen and (min-width: 680px) {
+        width: 300px;
+        display: grid;
+    }
+}
+
+.table-rank {
+    background-color: rgb(95, 181, 209);
+    color: white;
+    pointer-events: none;
+}
+
+.table-breed {
+    background-color: rgb(95, 181, 209);
+    color: white;
+    border-left: 2px solid lightblue;
+    pointer-events: none;
+}
+
+.table-legend {
+    display: flex;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    column-gap: 4px;
+
+    @media screen and (min-width: 680px) {
+        display: none;
+    }
+}
+
+.table-legend-content {
+    width: 48%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 4px;
+    border: 2px solid lightblue;
+    font-size: 18px;
+}
+
+.table1 {
+    display: flex;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    column-gap: 4px;
+
+    @media screen and (min-width: 680px) {
+        display: block;
+    }
+}
+
+.table2 {
+    display: flex;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    column-gap: 4px;
+
+    @media screen and (min-width: 680px) {
+        display: block;
+    }
+}
+
+.tableContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 680px) {
+        flex-direction: row;
+        column-gap: 20px;
+    }
+}
+
+.drag-over {
+    outline: 2px dashed rgb(99, 190, 218);
+}
