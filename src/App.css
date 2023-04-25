@@ -50,10 +50,6 @@
   border: 2px solid lightblue;
 }
 
-.button-text {
-  
-}
-
 @keyframes App-logo-float {
   0% {
     transform: translateY(0);

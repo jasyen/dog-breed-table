@@ -56,8 +56,8 @@ export function Table() {
             // Items are from different tables
             if (draggedItemInfo.table !== null && draggedItemInfo.table !== dragOverItemInfo.table) {
                 if (draggedItemInfo.table === 1 && dragOverItemInfo.table === 2 && table1.length > 1) {
-                    let table1Items = [... table1];
-                    let table2Items = [... table2];
+                    let table1Items = [...table1];
+                    let table2Items = [...table2];
 
                     const draggedItemContent = table1Items.splice(draggedItemInfo.index, 1)[0]
 
@@ -74,8 +74,8 @@ export function Table() {
                     dispatch(setTable1Items(sortedTable1Items));
                     dispatch(setTable2Items(sortedTable2Items));
                 } else if (draggedItemInfo.table === 2 && dragOverItemInfo.table === 1 && table2.length > 1) { 
-                    let table1Items = [... table1];
-                    let table2Items = [... table2];
+                    let table1Items = [...table1];
+                    let table2Items = [...table2];
 
                     const draggedItemContent = table2Items.splice(draggedItemInfo.index, 1)[0]
 
@@ -95,7 +95,7 @@ export function Table() {
                     alert("Woof Invalid Action Woof");
                 }
             } else if (draggedItemInfo.table === 1) { // Items both from table 1
-                let tableItems = [... table1];
+                let tableItems = [...table1];
                 const draggedItemContent = tableItems.splice(draggedItemInfo.index, 1)[0]
                 tableItems.splice(dragOverItemInfo.index, 0, draggedItemContent);
 
@@ -105,7 +105,7 @@ export function Table() {
         
                 dispatch(setTable1Items(sortedTableItems));
             } else if (draggedItemInfo.table === 2) { // Items both from table 2
-                let tableItems = [... table2];
+                let tableItems = [...table2];
                 const draggedItemContent = tableItems.splice(draggedItemInfo.index, 1)[0]
                 tableItems.splice(dragOverItemInfo.index, 0, draggedItemContent);
 
