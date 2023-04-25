@@ -192,7 +192,7 @@ export function Table() {
                         breed={item.breed}
                         onDragStart={(event) => handleDragStart(2, index, event)}
                         onDragEnter={(event) => handleDragEnter(2, index, event)}
-                        onDragOver={() => {}}
+                        onDragOver={(e) => {e.preventDefault()}}
                         onDragLeave={(event) => handleDragLeave(event)}
                         onDragEnd={(event) => handleSort()}
                         onDrop={(event) => handleDragLeave(event)}
