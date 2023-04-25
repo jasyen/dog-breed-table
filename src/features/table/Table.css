@@ -32,6 +32,7 @@
     margin-left: 10px;
     flex-wrap: wrap;
     column-gap: 4px;
+    pointer-events: none;
 
     @media screen and (min-width: 680px) {
         display: none;
